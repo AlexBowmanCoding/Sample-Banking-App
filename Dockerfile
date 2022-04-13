@@ -1,10 +1,8 @@
-FROM ubuntu:18.04 as base
+FROM python:bullseye
+
+EXPOSE 5000
 
 COPY . /app
-
-RUN apt update -y && apt install -y python3 python3-pip libpq-dev
-
-FROM base as app
 
 RUN pip3 install -r /app/requirements.txt
 

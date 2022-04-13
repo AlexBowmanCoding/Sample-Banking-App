@@ -3,6 +3,7 @@ from flask import Flask
 from flask_migrate import Migrate
 from .models import db
 from flask_sqlalchemy import SQLAlchemy
+
 # https://flask.palletsprojects.com/en/2.0.x/patterns/appfactories/
 
 
@@ -11,8 +12,8 @@ from flask_sqlalchemy import SQLAlchemy
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-    SECRET_KEY='dev',
-    SQLALCHEMY_DATABASE_URI='postgresql://postgres@localhost:5432/my_blog',
+    SECRET_KEY=os.environ.get("PGPASSWORD", 'dev'),
+    SQLALCHEMY_DATABASE_URI=os.environ.get("DATABASEURI",'postgresql://postgres@localhost:5432/my_blog'),
     SQLALCHEMY_TRACK_MODIFICATIONS=False,
     SQLALCHEMY_ECHO=True
     )

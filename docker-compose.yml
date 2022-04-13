@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    image: "app:latest"
+    environment:
+      PGPASSWORD: Pgadmin
+      DATABASEURI: 'postgresql://postgres@db:5432/my_bank'
+  db:
+    image: "postgres:14"
+    environment: 
+      POSTGRES_PASSWORD: Pgadmin
+      POSTGRES_DB: my_bank
+    volumes:
+    - ./Database:/docker-entrypoint-initdb.d
