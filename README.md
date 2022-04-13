@@ -33,13 +33,19 @@ Future improvements include balance manipulation for withdrawls and deposits and
 
 ## How To Setup locally:
 
-1. Set python interpreter to Env
+1. Create virtual environment
 
-2. Run "Export FLASK_APP=src/\_\_init__.py"
+2. Install requirements.txt
 
-3. Run "Flask Run"
+3. Connect database in __init__.py in the src folder uner SQLALCHEMY_DATABASE_URI
+
+4. Set python interpreter to virtual environment
+
+5. Run "Export FLASK_APP=src/\_\_init__.py"
+
+6. Run "Flask Run"
 
 
 ## Misc 
 
-The database folder contains a pgdump file
+The database folder contains a pgdump file for the database if needed
