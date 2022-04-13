@@ -31,7 +31,6 @@ Future improvements include balance manipulation for withdrawls and deposits and
 
 
 
-
 ## How To Setup locally:
 
 1. Set python interpreter to Env
@@ -40,3 +39,7 @@ Future improvements include balance manipulation for withdrawls and deposits and
 
 3. Run "Flask Run"
 
+
+## Misc 
+
+The database folder contains a pgdump file
