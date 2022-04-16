@@ -27,7 +27,7 @@ With input from a friend the project has these small quality of life details lik
 
 I chose ORM because i still didnt fully understand it so i wanted to learn it and I did.
 
-Future improvements include balance manipulation for withdrawls and deposits and integration into other projects I'll make in future courses.
+
 
 
 
