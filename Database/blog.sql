@@ -25,7 +25,7 @@ SET default_table_access_method = heap;
 --
 
 CREATE TABLE public.bank_users (
-    user_id integer NOT NULL,
+    user_id SERIAL NOT NULL,
     username text NOT NULL,
     email text,
     password text NOT NULL,

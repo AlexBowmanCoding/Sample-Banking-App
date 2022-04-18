@@ -6,7 +6,7 @@ COPY . /app
 
 RUN pip3 install -r /app/requirements.txt
 
-ENV FLASK_APP="/app/src/__init__.py"
+ENV FLASK_APP="/app/bankingapp/__init__.py"
 
 ENV LC_ALL=C.UTF-8
 

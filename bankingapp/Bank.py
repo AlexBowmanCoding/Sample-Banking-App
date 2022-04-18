@@ -200,7 +200,3 @@ def withdraw(id:int):
     return jsonify(u.balance)
 
 
-# Pytest Functions
-
-def test_scramble():
-   assert scramble('test') == "d1c71342dcb300575ab1deac5ccc9fc86db1803513c65f699eb526718952294fbbd6f56584ae97ecf5f2215c1eab0f6668750ff5ca6623140b368e983c01b17f"

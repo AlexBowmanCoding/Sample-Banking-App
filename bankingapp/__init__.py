@@ -12,9 +12,9 @@ from flask_sqlalchemy import SQLAlchemy
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-    SECRET_KEY=os.environ.get("PGPASSWORD", 'dev'),
-    SQLALCHEMY_DATABASE_URI=os.environ.get("DATABASEURI",'postgresql://postgres@localhost:5432/my_blog'),
-    SQLALCHEMY_TRACK_MODIFICATIONS=False,
+    SECRET_KEY=os.environ.get("PGPASSWORD", 'Yknb4iYJNMy0WrT_NDtt1Q'),
+    SQLALCHEMY_DATABASE_URI=os.environ.get("DATABASEURI",'cockroachdb://aws:Yknb4iYJNMy0WrT_NDtt1Q@free-tier14.aws-us-east-1.cockroachlabs.cloud:26257/defaultdb?&options=--cluster%3Dprime-wyvern-1360'),
+    #SQLALCHEMY_TRACK_MODIFICATIONS=False,
     SQLALCHEMY_ECHO=True
     )
 
